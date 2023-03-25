@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="933.0" prefWidth="1369.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="23.0" layoutY="82.0" prefHeight="339.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="colNic" prefWidth="110.00003051757812" text="NIC" />
+          <TableColumn fx:id="colName" prefWidth="114.0" text="Name" />
+            <TableColumn fx:id="colAddress" minWidth="1.0" prefWidth="107.0" text="Address" />
+            <TableColumn fx:id="colSalary" minWidth="0.0" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="colDelete" prefWidth="112.0" text="Delete Button" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="28.0" text="Customer Table" textFill="#2f24f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="71.0" prefHeight="0.0" prefWidth="637.0" />
+   </children>
+</AnchorPane>
